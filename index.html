@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cj — 工业 AI / 工业大数据建模</title>
+<meta name="description" content="cj，青岛科技大学数据科学学院研究生，方向为工业人工智能、随机配置网络与工业大数据建模。">
+<style>
+  :root{
+    --bg:#ffffff;
+    --fg:#1c1f23;
+    --muted:#5b6470;
+    --line:#e6e9ee;
+    --accent:#0b6bcb;
+    --accent-soft:#eef5fd;
+    --tag-bg:#f4f6f9;
+    --max:820px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#14171a;
+      --fg:#e8ebee;
+      --muted:#9aa4b0;
+      --line:#262c33;
+      --accent:#5aa9f0;
+      --accent-soft:#1b2733;
+      --tag-bg:#1e2329;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:56px 24px 96px}
+
+  /* header */
+  header{margin-bottom:44px}
+  .top{display:flex;align-items:flex-start;gap:22px;flex-wrap:wrap}
+  .avatar{
+    width:82px;height:82px;border-radius:50%;
+    border:1px solid var(--line);
+    object-fit:cover;flex:0 0 auto;background:var(--tag-bg);
+  }
+  .id{flex:1 1 240px;min-width:200px}
+  h1{font-size:1.6rem;margin:0 0 6px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin:0 0 14px;font-size:.95rem}
+  .links{display:flex;gap:14px;flex-wrap:wrap;font-size:.9rem}
+  .links a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px}
+  .links a:hover{border-bottom-color:var(--accent)}
+  .langbtn{
+    margin-left:auto;flex:0 0 auto;
+    background:transparent;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;
+    font-size:.8rem;padding:5px 14px;cursor:pointer;
+    font-family:inherit;transition:.15s;
+  }
+  .langbtn:hover{color:var(--accent);border-color:var(--accent)}
+
+  /* sections */
+  section{margin-bottom:40px}
+  h2{
+    font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);
+  }
+  p{margin:0 0 12px}
+  ul{margin:0;padding-left:20px}
+  li{margin-bottom:9px}
+  li::marker{color:var(--accent)}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* item rows */
+  .item{margin-bottom:20px}
+  .item:last-child{margin-bottom:0}
+  .item .t{font-weight:600;margin-bottom:3px}
+  .item .m{color:var(--muted);font-size:.87rem;margin-bottom:4px}
+  .item .d{font-size:.94rem;color:var(--fg)}
+
+  /* tags */
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}
+  .tag{
+    font-size:.8rem;background:var(--tag-bg);color:var(--muted);
+    border:1px solid var(--line);border-radius:6px;padding:3px 10px;
+  }
+  .tag.k{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+
+  /* skills table */
+  table{width:100%;border-collapse:collapse;font-size:.93rem}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:.82rem;letter-spacing:.03em;width:34%}
+
+  footer{
+    margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.82rem;
+  }
+  [data-en]{display:none}
+  html[data-lang="en"] [data-zh]{display:none}
+  html[data-lang="en"] [data-en]{display:revert}
+
+  @media (max-width:540px){
+    .wrap{padding:36px 18px 64px}
+    .langbtn{margin-left:0}
+    h1{font-size:1.35rem}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="top">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/193044318?v=4" alt="avatar">
+      <div class="id">
+        <h1>cj</h1>
+        <p class="sub">
+          <span data-zh>大数据方向研究生 · 青岛科技大学 数据科学学院 · 工业 AI / 工业大数据建模</span>
+          <span data-en>M.S. Student in Big Data · College of Data Science, Qingdao University of Science and Technology · Industrial AI / Industrial Big Data Modeling</span>
+        </p>
+        <div class="links">
+          <a href="https://github.com/walecjccc" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:your-email@example.com">Email</a>
+          <a href="https://github.com/walecjccc/scn-reproduction" target="_blank" rel="noopener">Paper Reproduction</a>
+        </div>
+      </div>
+      <button class="langbtn" id="langbtn" type="button">EN</button>
+    </div>
+  </header>
+
+  <section>
+    <h2><span data-zh>简介</span><span data-en>About</span></h2>
+    <p>
+      <span data-zh>我是青岛科技大学数据科学学院大数据方向的研究生（2026 级），在 <a href="https://sjkx.qust.edu.cn/" target="_blank" rel="noopener">"AI for Engineering"</a> 团队从事工业人工智能相关研究，导师为王殿辉教授。</span>
+      <span data-en>I am a graduate student in Big Data at the College of Data Science, Qingdao University of Science and Technology (Class of 2026). I work on industrial artificial intelligence in the "AI for Engineering" group, advised by Prof. Dianhui Wang.</span>
+    </p>
+    <p>
+      <span data-zh>我的关注点在于：如何把轻量、可解释的机器学习模型用到真实工业场景里——尤其是那些"很少发生、但一旦发生代价很高"的关键事件，例如制造过程中的质量缺陷与设备异常。目前在复现并拓展随机配置网络（SCN / SCM）相关理论，并在轮胎制造场景中做验证。</span>
+      <span data-en>My interest is in bringing lightweight and interpretable machine learning into real industrial settings — especially rare-but-costly critical events such as manufacturing quality defects and equipment anomalies. I am currently reproducing and extending Stochastic Configuration Networks (SCN / SCM) and validating them in tire-manufacturing scenarios.</span>
+    </p>
+  </section>
+
+  <section>
+    <h2><span data-zh>研究方向</span><span data-en>Research Interests</span></h2>
+    <ul>
+      <li>
+        <span data-zh><strong>随机配置学习理论</strong>：随机配置网络（SCN）与随机配置学习机（SCM）的复现与改进</span>
+        <span data-en><strong>Stochastic configuration learning</strong>: reproduction and improvement of SCN and Stochastic Configuration Machines (SCM)</span>
+      </li>
+      <li>
+        <span data-zh><strong>小概率重要事件预测</strong>：面向类别极不平衡场景的建模方法</span>
+        <span data-en><strong>Prediction of rare yet critical events</strong>: modeling under extreme class imbalance</span>
+      </li>
+      <li>
+        <span data-zh><strong>工业大数据建模与分析</strong>：制造过程质量检测、设备健康管理与预测性维护</span>
+        <span data-en><strong>Industrial big data modeling</strong>: in-process quality inspection, equipment health management and predictive maintenance</span>
+      </li>
+      <li>
+        <span data-zh><strong>轻量化与可解释性</strong>：低算力条件下的可解释工业智能模型</span>
+        <span data-en><strong>Lightweight &amp; interpretable models</strong>: interpretable industrial AI under low-compute constraints</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span data-zh>项目与实践</span><span data-en>Projects</span></h2>
+
+    <div class="item">
+      <div class="t">SCN / SCM <span data-zh>论文复现</span><span data-en>Paper Reproduction</span></div>
+      <div class="m">2026 – <span data-zh>至今</span><span data-en>present</span> · Python</div>
+      <div class="d">
+        <span data-zh>系统复现 Stochastic Configuration Networks 系列工作（2017 SCN、2023 SCM、近年 GSCN / NR-GSCN 变体），整理中文精读笔记与可复现代码，建立实验基准。</span>
+        <span data-en>A systematic reproduction of the Stochastic Configuration Networks series (2017 SCN, 2023 SCM, recent GSCN / NR-GSCN variants), with reading notes and reproducible code.</span>
+      </div>
+      <div class="tags">
+        <span class="tag k">Python</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Reproducibility</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="t"><span data-zh>工业场景质量检测与设备健康管理</span><span data-en>Industrial Quality Inspection &amp; Equipment Health Management</span></div>
+      <div class="m">2026 – <span data-zh>至今</span><span data-en>present</span> · <span data-zh>校企合作项目</span><span data-en>University–Industry Project</span></div>
+      <div class="d">
+        <span data-zh>参与轮胎制造场景的工业互联网数据分析工作，围绕生产工序质量预警与关键设备状态预测展开建模研究。</span>
+        <span data-en>Working on industrial internet data analytics for tire manufacturing, focusing on in-process quality warning and critical equipment condition prediction.</span>
+      </div>
+      <div class="tags">
+        <span class="tag k">Industrial AI</span>
+        <span class="tag">Time Series</span>
+        <span class="tag">Anomaly Detection</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="t">gesture-canvas</div>
+      <div class="m">2026 · JavaScript · <a href="https://github.com/walecjccc/gesture-canvas" target="_blank" rel="noopener">GitHub</a></div>
+      <div class="d">
+        <span data-zh>基于 MediaPipe Hands 的手势识别交互画布，实时识别手部关键点并驱动粒子特效。</span>
+        <span data-en>An interactive canvas driven by MediaPipe Hands: real-time hand landmark recognition with particle effects.</span>
+      </div>
+      <div class="tags">
+        <span class="tag k">JavaScript</span>
+        <span class="tag">MediaPipe</span>
+        <span class="tag">Computer Vision</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span data-zh>技能</span><span data-en>Skills</span></h2>
+    <table>
+      <tr>
+        <th><span data-zh>编程语言</span><span data-en>Languages</span></th>
+        <td>Python（<span data-zh>主力</span><span data-en>primary</span>）· SQL</td>
+      </tr>
+      <tr>
+        <th><span data-zh>机器学习</span><span data-en>Machine Learning</span></th>
+        <td><span data-zh>随机配置网络 · 深度学习基础 · 特征工程</span><span data-en>Stochastic Configuration Networks · Deep Learning fundamentals · Feature engineering</span></td>
+      </tr>
+      <tr>
+        <th><span data-zh>数据</span><span data-en>Data</span></th>
+        <td><span data-zh>数据处理与清洗 · 时序数据分析 · 数据可视化</span><span data-en>Data processing &amp; cleaning · Time-series analysis · Visualization</span></td>
+      </tr>
+      <tr>
+        <th><span data-zh>工具</span><span data-en>Tools</span></th>
+        <td>Git · Linux · Jupyter</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span data-zh>联系</span><span data-en>Contact</span></h2>
+    <ul>
+      <li>GitHub: <a href="https://github.com/walecjccc" target="_blank" rel="noopener">@walecjccc</a></li>
+      <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+      <li><span data-zh>青岛，中国</span><span data-en>Qingdao, China</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span data-zh>最后更新：2026 年 9 月</span>
+    <span data-en>Last updated: September 2026</span>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  var btn = document.getElementById('langbtn');
+  function apply(lang){
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang === 'en' ? 'en' : 'zh-CN');
+    btn.textContent = lang === 'en' ? '中文' : 'EN';
+    try { localStorage.setItem('lang', lang); } catch(e){}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch(e){}
+  apply(saved === 'en' ? 'en' : 'zh');
+  btn.addEventListener('click', function(){
+    apply(root.getAttribute('data-lang') === 'en' ? 'zh' : 'en');
+  });
+})();
+</script>
+</body>
+</html>
